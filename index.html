@@ -6,6 +6,10 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="html" href="html/cabin.html">
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="JavaScript" href="js/materialize.js">
 </head>
 <body class="container-fluid">
 	<header>
@@ -14,82 +18,103 @@
 	      <a id="logo-container" href="#" class="brand-logo bold">FREELANCER</a>
 	      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 	      <ul class="right hide-on-med-and-down">
-	        <li><a href="sass.html">PORTFOLIO</a></li>
-	        <li><a href="badges.html">ABOUT</a></li>
-	        <li><a href="collapsible.html">CONTACT</a></li>
+	        <li><a href="#portfolio">PORTFOLIO</a></li>
+	        <li><a href="#about">ABOUT</a></li>
+	        <li><a href="#contact">CONTACT</a></li>
 	      </ul>
 	    </div>
 	  </nav>
 
 	  <ul class="sidenav" id="mobile-demo">
-	    <li><a href="sass.html">PORTFOLIO</a></li>
-	    <li><a href="badges.html">ABOUT</a></li>
-	    <li><a href="collapsible.html">CONTACT</a></li>
+	    <li><a href="#portfolio">PORTFOLIO</a></li>
+	    <li><a href="#about">ABOUT</a></li>
+	    <li><a href="#contact">CONTACT</a></li>
 	  </ul>
 	
-		<section class="row fondoverde">
+		<section class="row fondoverde center">
 			<div class="col s12 m12 l12">
-				<img src="img/profile.png" alt="legoman worker">
+				<img class="legoman" src="img/profile.png" alt="legoman worker">
 				<h1>FREELANCER</h1>
+				<div class="row center">
+						<i class="fas fa-star fa-2x estrella"><span><div class="rectangulo"></div></span></i>
+				</div>
 				<p>Web Developer - Graphic Artist - User Experience Designer</p>
 		</section>
 
 	</header>
 
-	<section class="row">
+	<section class="row" id="portfolio">
 		<div class="col s12 m12 l12">
-			<h2>PORTFOLIO</h2>
-		</div>
-		<div class="row">
-			<div class="col s12 m6 l4">
-				<img src="img/cabin.png" alt="cabin">
-			</div>
-			<div class="col s12 m6 l4">
-				<img src="img/cake.png" alt="cake">
-			</div>
-			<div class="col s12 m6 l4">
-				<img src="img/circus.png" alt="circus">
+			<h2 class="txt_centrado">PORTFOLIO</h2>
+			<div class="row center">
+				<i class="far fa-star fa-2x"></i>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row section">
+			<!-- Button trigger modal -->
 			<div class="col s12 m6 l4">
-				<img src="img/game.png" alt="game">
+				<a href="html/cabin.html"><img class="resizeimg" src="img/cabin.png" alt="cabin"></a>
+			</div>
+
+			<div class="col s12 m6 l4">
+				<a href="html/cabin.html"><img class="resizeimg" src="img/cake.png" alt="cake"></a>
 			</div>
 			<div class="col s12 m6 l4">
-				<img src="img/safe.png" alt="safe">
+				<a href="html/cabin.html"><img class="resizeimg" src="img/circus.png" alt="circus"></a>
+			</div>
+
+			<div class="col s12 m6 l4">
+				<a href="html/cabin.html"><img class="resizeimg" src="img/game.png" alt="game"></a>
 			</div>
 			<div class="col s12 m6 l4">
-				<img src="img/submarine.png" alt="submarine">
+				<a href="html/cabin.html"><img class="resizeimg" src="img/safe.png" alt="safe"></a>
+			</div>
+			<div class="col s12 m6 l4">
+				<a href="html/cabin.html"><img class="resizeimg" src="img/submarine.png" alt="submarine"></a>
 			</div>
 		</div>
+
+		
+
 	</section>
 
-	<section class="row fondoverde">
+	<section class="row fondoverde" id="about">
 		<div class="col s12 m12 l12">
-			<h2>ABOUT</h2>
+			<h2 class="txt_centrado">ABOUT</h2>
+			<div class="row center">
+						<i class="fas fa-star fa-2x estrella"><span><div class="rectangulo"></div></span></i>
+				</div>
 		</div>
 		<div class="row">
 			<div class="col s6 m6 l6">
-				<p> Freelancer is a free bootstrap theme created by Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+				<p class="margenizq"> Freelancer is a free bootstrap theme created by Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
 			</div>
 			<div class="col s6 m6 l6">
-				<p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your project, this template is the perfect starting point.</p>
+				<p class="margender">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your project, this template is the perfect starting point.</p>
 			</div>
 		</div>
-		<button> Download Now </button>
+		<div class="row center">
+			<a class="waves-effect waves-teal btn btn-flat botonabout"><span><i class="small material-icons color_blanco">file_download</i></span>Download Now</a>
+		</div>
+
 	</section>
 
-	<section>
-		<h2 class="h2oscuro">CONTACT</h2>
+	<section class="row" id="contact">
+		<div class="col s12 m12 l12">
+			<h2 class="h2oscuro">CONTACT</h2>
+			<div class="row center">
+				<i class="far fa-star fa-2x"></i>
+			</div>
+		</div>
 
 		<div class="row">
 			<form class="col s12">
 				<div class="row">
-					<div class="input-field col s6">
-						<input placeholder="Placeholder" id="first_name" type="text" class="validate">
-						<label for="first_name"> Name</label>
-					</div>
-				</div>
+					<div class="input-field col s12">
+						<input id="icon_prefix" type="text" class="validate">
+		                <label for="icon_prefix">Name</label>
+		            </div>
+		        </div>
 
 				<div class="row">
 					<div class="input-field col s12">
@@ -97,65 +122,65 @@
 		                <label for="email">Email</label>
 		            </div>
 		        </div>
+
+		        <div class="row">
+					<div class="input-field col s12">
+						<input id="icon_telephone" type="tel" class="validate">
+		                <label for="icon_telephone">Phone Number</label>
+		            </div>
+		        </div>
  	  
 	            <div class="row">
-	              <div class="input-field col s12">
-	                <i class="material-icons prefix">phone</i>
-	                <input id="icon_telephone" type="tel" class="validate">
-	                <label for="icon_telephone">Cell Phone</label>
+	                <form class="col s12">
+	                  <div class="row">
+	                    <div class="input-field col s12">
+	                      <textarea id="textarea1" class="materialize-textarea"></textarea>
+	                      <label for="textarea1">Message</label>
+	                    </div>
+	                  </div>
+	                </form>
 	              </div>
+				<div class="row center">
+	            	<button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
 	            </div>
-	            <div class="row">
-		            <div class="input-field col s6">
-		              <i class="material-icons prefix">mode_edit</i>
-		              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-		              <label for="icon_prefix2">Message</label>
-		            </div>
-          		</div>
+
         	</form>
         </div>
 
-        <button>Send</button>
-
+	  </button>
 	</section>
 
 	
-	<footer class="page-footer">
-	  <div class="container">
-	    <div class="row">
-	      <div class="col l4 s12">
-	        <h5 class="white-text">LOCATION</h5>
-	        <p class="white-text text-lighten-4">2215 John Daniel Drive Clark, MO 65243</p>
-	      </div>
-	      <div class="col l4 s12">
-	        <h5 class="white-text">AROUND THE WEB</h5>
-	        <ul>
-	          <li>facebook</li>
-	          <li>google</li>
-	          twitter
-	          linkedin
-	          dribble
-	        </ul>
-	      </div>
-	      <div class="col l4 s12">
-	        <h5 class="white-text">ABOUT FREELANCER</h5>
-	        <p class="white-text text-lighten-4">Freelance is free to use, open source Bootstrap theme created by <span> Start Bootstrap</span>.</p>
-	      </div>
+	<footer class="page-footer fondoazul">
+		<div class="container">
+			<div class="row ">
+				<div class="col l4 s12 ">
+			        <h5 class="white-text">LOCATION</h5>
+			        <p class="white-text text-lighten-4">2215 John Daniel Drive Clark, MO 65243</p>
+			      </div>
+	      	<div class="col l4 s12">
+		        <h5 class="white-text">AROUND THE WEB</h5>
+		        <div class="alinear">
+		        	<a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x icono"></i></a></li>
+		            <a href="https://plus.google.com/discover"><i class="fab fa-google-plus-g fa-2x icono"></i>
+		            <a href="https://www.twitter.com"><i class="fab fa-twitter fa-2x icono"></i>
+		            <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in fa-2x icono"></i>
+		            <a href="https://dribbble.com/"><i class="fab fa-dribbble fa-2x icono"></i>
+		        </div>
+	      	</div>
+	      	<div class="col l4 s12 ">
+		        <h5 class="white-text">ABOUT FREELANCER</h5>
+		        <p class="white-text text-lighten-4">Freelance is free to use, open source Bootstrap theme created by <span> Start Bootstrap</span>.</p>
+	      	</div>
 	    </div>
-	  </div>
-	  <div class="footer-copyright">
-	    <div class="container">
-	    © 2014 Copyright Text
-	    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-	    </div>
-	  </div>
 	</footer>
 
-
-
+	<script defer src= "https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
 
-
+        
+	
 	
 </body>
 </html>
